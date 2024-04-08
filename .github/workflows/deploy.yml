@@ -19,5 +19,5 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: .
-          remote-dir: test.mdamsgaard.dk # Path to the directory on your Simply.com server
+          local-dir: ./ # Path to your code in the repository
+          server-dir: test.mdamsgaard.dk # Path to the directory on your Simply.com server
