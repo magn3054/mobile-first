@@ -1,4 +1,4 @@
-name: Deploy Website
+name: Deploy to Simply.com
 
 on:
   push:
@@ -10,9 +10,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Deploy to Simply.com
-        run: |
-          rsync -avz --delete ./ ${{ secrets.USERNAME }}@${{ secrets.SERVER }}:test.mdamsgaard.dk
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: .
+          remote-dir: test.mdamsgaard.dk # Path to the directory on your Simply.com server
