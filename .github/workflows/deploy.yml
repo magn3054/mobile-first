@@ -20,4 +20,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./ # Path to your code in the repository
-          server-dir: test/ # Path to the directory on my Simply.com server # To be changed when subdomain i generated with group
+          server-dir: havnerundfart/ # Path to the directory on my Simply.com server # To be changed when subdomain i generated with group
