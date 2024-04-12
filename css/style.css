@@ -1,25 +1,15 @@
+:root {
+    --darkblue: #19355c;
+    --lightblue: #a9eaff;
+    --white: #ffffff; 
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-header {
-
-}
-
-.banner {
-    border: 2px solid red;
-    position: absolute;
-    z-index: -1;
-}
-
-header h1 {
-    margin: 20px;
-    color: white;
+.test2 {
+    border: 2px solid var(--darkblue);
 }
