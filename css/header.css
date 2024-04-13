@@ -68,17 +68,22 @@ h1{
 .undermenu {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
+    padding: 0 10%;
+    background-color: var(--lightblue);
 
     &:first-of-type {
         margin-top: 25%;
+    }
+    &:last-of-type {
+        padding-bottom: 5%;
     }
 }
 
 .line {
     display: flex;
     justify-content: space-between;
-    margin: 1rem 0.5rem;
+    margin: 1rem 0.5rem 0.5rem;
 }
 
 .line h3 {
@@ -89,4 +94,20 @@ h1{
 .line img {
     height: 1.5rem;
     width: 1.5rem;
+}
+
+
+/* Drop-down i drop-out */
+.dropdown-container {
+    display: none;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: var(--lightblue);
+}
+
+.dropdown-container > a {
+    color: var(--darkblue);
+    text-decoration: none;
+    margin: 0.25rem;
 }

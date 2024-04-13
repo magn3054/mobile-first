@@ -22,3 +22,22 @@ burgerIcon.addEventListener('click', function() {
         
     }   
 });
+
+
+
+
+const dropDowns = document.querySelectorAll('.dropplus');
+dropDowns.forEach(dropDown => {
+    const parentElement = dropDown.closest('.undermenu');
+    const dropDownContainer = parentElement.querySelector('.dropdown-container');
+
+    dropDown.addEventListener('click', function() {
+        // Toggle the display of the dropdown container
+        if (dropDownContainer.style.display === "flex") {
+            dropDownContainer.style.display = "none";
+            dropDown.src = 'icons/plus-icon.svg';
+        } else {
+            dropDownContainer.style.display = "flex";
+            dropDown.src = 'icons/minus-icon.svg';
+    }});
+});
