@@ -9,3 +9,81 @@
     padding: 0;
     margin: 0;
 }
+
+header {
+    background-color: var(--lightblue);
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between
+}
+
+.logo {
+    margin: 0.25rem 0.5rem;
+    min-width: 4rem;
+}
+
+#headertext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 50%;
+    height: 100%;
+    animation: none;
+}
+
+h1{
+    color: var(--darkblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(1rem, 5vw, 3rem); /* Gør fonten responsiv i alt mellem 16 og 32 pixels, dog aldrig strørre end 5% af viewporten */
+}
+
+.tab{
+    min-width: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 1rem;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--lightblue);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    transform: translateX(100vw);
+    animation: none;
+}
+
+.undermenu {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    &:first-of-type {
+        margin-top: 25%;
+    }
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0.5rem;
+}
+
+.line h3 {
+    color: var(--darkblue);
+    font-weight: bolder;
+}
+
+.line img {
+    height: 1.5rem;
+    width: 1.5rem;
+}

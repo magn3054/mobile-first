@@ -27,7 +27,7 @@ header {
     margin: 0rem 0.5rem;
 }
 
-.headertext {
+#headertext {
     display: flex;
     flex-direction: column;
     min-width: 50%;
@@ -39,7 +39,7 @@ h1{
     align-items: center;
     justify-content: center;
     height: 100%;
-    font-size: 150%;
+    font-size: clamp(1rem, 5vw, 3rem); /* Gør fonten responsiv i alt mellem 16 og 32 pixels, dog aldrig strørre end 5% af viewporten */
 }
 
 .tab{
@@ -47,5 +47,6 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0rem 1rem;
 }
 
