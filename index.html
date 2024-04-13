@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/forside.css">
+    <link rel="stylesheet" href="css/slideshow.css">
     <link rel="stylesheet" href="css/keyframes.css">
 </head>
 <body>
@@ -23,7 +24,6 @@
     </header>
 
     <main>
-
         <div class="sidebar">
             <div class="undermenu">
                 <div class="line">
@@ -70,23 +70,59 @@
         </div>
 
         <div class="page">
-            <div class="showroom">
-                <div class="arrowleft"></div>
-                <img src="" alt="">
-                <div class="arrowright"></div>
+            <div class="slideshow">
+                <div class="slides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="https://aarhushavnerundfart.dk/wp-content/uploads/1440-%C3%97-719px.png" style="width:100%">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="slides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="https://aarhushavnerundfart.dk/wp-content/uploads/Design-uden-navn-77.png" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="slides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="https://aarhushavnerundfart.dk/wp-content/uploads/Design-uden-navn-16-1440x811.png" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+                
+                <img class="prev" onclick="plusSlides(-1)" src="icons/arrow-icon.svg" alt="Venstre pil">
+                <img class="next" onclick="plusSlides(1)" src="icons/arrow-icon.svg" alt="Højre pil">
             </div>
+                
+            <div class="indicators">
+                <span class="indicator" onclick="currentSlide(1)"></span> 
+                <span class="indicator" onclick="currentSlide(2)"></span> 
+                <span class="indicator" onclick="currentSlide(3)"></span> 
+            </div>
+
             <article>
                 <section>
-                    <h4>hello</h4>
-                    <p></p>
+                    <h4>Overskrift</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor consequatur sequi veniam aut quisquam dicta sunt, rerum explicabo obcaecati cupiditate reprehenderit nihil impedit? Mollitia consectetur eos, quidem beatae magnam accusantium ipsa.</p>
                 </section>
                 <section>
-                    <h4></h4>
-                    <p></p>
+                    <h4>Overskrift</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor consequatur sequi veniam aut quisquam dicta sunt, rerum explicabo obcaecati cupiditate reprehenderit nihil impedit? Mollitia consectetur eos, quidem beatae magnam accusantium ipsa.</p>
                 </section>
                 <section>
-                    <h4></h4>
-                    <p></p>
+                    <h4>Overskrift</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor consequatur sequi veniam aut quisquam dicta sunt, rerum explicabo obcaecati cupiditate reprehenderit nihil impedit? Mollitia consectetur eos, quidem beatae magnam accusantium ipsa.</p>
+                </section>
+                <section>
+                    <h4>Overskrift</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor consequatur sequi veniam aut quisquam dicta sunt, rerum explicabo obcaecati cupiditate reprehenderit nihil impedit? Mollitia consectetur eos, quidem beatae magnam accusantium ipsa.</p>
+                </section>
+                <section>
+                    <h4>Overskrift</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor consequatur sequi veniam aut quisquam dicta sunt, rerum explicabo obcaecati cupiditate reprehenderit nihil impedit? Mollitia consectetur eos, quidem beatae magnam accusantium ipsa.</p>
+                </section>
+                <section>
+                    <h4>Overskrift</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor consequatur sequi veniam aut quisquam dicta sunt, rerum explicabo obcaecati cupiditate reprehenderit nihil impedit? Mollitia consectetur eos, quidem beatae magnam accusantium ipsa.</p>
                 </section>
             </article>
         </div>
@@ -97,5 +133,6 @@
     </footer>
 
 <script src="js/sidemenu.js"></script>
+<script src="js/slideshow.js"></script>
 </body>
 </html>

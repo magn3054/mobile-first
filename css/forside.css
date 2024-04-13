@@ -10,7 +10,13 @@
     margin: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
 
+/* .page, article, section {
+    border: red solid 2px
+} */
 
 .page {
     display: flex;
@@ -18,7 +24,28 @@
     align-items: center;
     height: 100vh;
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     transform: translateX(0vw);
     animation: none;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    padding: 0;
+}
+
+section {
+    margin: 1rem 0;
+}
+
+h4 {
+    font-size: clamp(0.25rem, 5vw, 1.25rem);
+    color: var(--darkblue);
+}
+
+p {
+    font-size: clamp(0.1rem, 5vw, 1rem);
+    color: var(--darkblue);
 }
