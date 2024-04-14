@@ -55,15 +55,12 @@
     max-width: 2rem;
     max-height: 2rem;
     margin: 0.5vw 0.5vw 0.5vw 0.5vw;
-    /* background-color: #bbb; */
-    fill: #a9eaff;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 
-.active, .indicator:hover {
-    /* background-color: #717171; */
-    fill: #19355c;
+.slides > img {
+    width: 100%;
 }
 
 /* Fading animation */
