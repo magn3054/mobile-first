@@ -1,4 +1,4 @@
-h2{
+.event h2{
     margin-top: 3rem;
     display: flex;
     align-items: center;
@@ -7,7 +7,7 @@ h2{
 
 }
 
-img{
+.event img{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,7 @@ img{
     padding: 0 3rem;
 }
 
-.tekst{
+.event .tekst{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -25,7 +25,7 @@ img{
     padding: 0 3rem;
 }
 
-.tekst p{
+.event .tekst p{
     font-size: 1rem;
     margin: 0.5rem;
 }
