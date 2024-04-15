@@ -1,25 +1,43 @@
+body {
+    background-color: #a9eaff;
+    text-decoration-color: #19355c;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    padding: 10px;
+}
+
 ul {
-    padding: 0;
+    padding: 25px;
     list-style-type: none;
 }
 
 li {
     display: grid;
-    grid-template-columns: auto; 
+    grid-template-columns: auto 1fr; 
     align-items: center;
 }
 
+ /* Justerer teksten til venstre */
 .drink {
     justify-self: start; 
 }
 
 .price {
-    justify-self: flex-end; 
+    justify-self: end; 
     color: #19355c; 
     font-weight: bold; 
 }
 
-.price::before {
-    content: "......"; 
-    margin-right: 10px; 
+/* tilføjer lidt plads over billedet*/
+img {
+    grid-column: 1 / span 2; 
+    margin-top: 10px; 
 }
