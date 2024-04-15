@@ -22,6 +22,12 @@ header {
 .logo {
     margin: 0.25rem 0.5rem;
     min-width: 4rem;
+    max-width: 4.1rem;
+}
+
+.headerlinks {
+    position: absolute;
+    display: none;
 }
 
 #wordmark {
@@ -43,12 +49,13 @@ h1{
 }
 
 .tab{
-    min-width: 4rem;
+    width: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0rem 1rem;
+    margin: 0.2rem;
 }
 
 
