@@ -1,0 +1,32 @@
+.boks-1 {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    color: #051A56;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.boks-1 a {
+    text-decoration: none;
+}
+
+.boks-1 p {
+    margin: 0 0 10px 0;
+}
+
+.profil-billede {
+    border-radius: 50%;
+    width: 175px;
+    overflow: hidden;
+    float: left;
+
+}
+
+.boks-2 .profil-billede {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
