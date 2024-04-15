@@ -118,7 +118,7 @@ h1{
     background-color: var(--lightblue);
 }
 
-.dropdown-container > a {
+.dropdown-container > a, .line > h3 > a {
     color: var(--darkblue);
     text-decoration: none;
     margin: 0.25rem;
