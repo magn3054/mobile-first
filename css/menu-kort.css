@@ -1,0 +1,25 @@
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: grid;
+    grid-template-columns: auto; 
+    align-items: center;
+}
+
+.drink {
+    justify-self: start; 
+}
+
+.price {
+    justify-self: flex-end; 
+    color: #19355c; 
+    font-weight: bold; 
+}
+
+.price::before {
+    content: "......"; 
+    margin-right: 10px; 
+}
