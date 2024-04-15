@@ -24,8 +24,6 @@ burgerIcon.addEventListener('click', function() {
 });
 
 
-
-
 const dropDowns = document.querySelectorAll('.dropplus');
 dropDowns.forEach(dropDown => {
     const parentElement = dropDown.closest('.undermenu');
