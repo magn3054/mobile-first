@@ -1,12 +1,21 @@
+* {
+    color: #19355c;
+    
+}
+
+#om-os {
+    font-size: 2.3rem;
+}
+
 .boks-1 {
     margin: 30px;
     display: flex;
     justify-content: center;
-    color: #051A56;
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
-
+    list-style: 1.5;
+    line-height: 1.5;
 }
 
 .boks-1 a {
@@ -17,11 +26,56 @@
     margin: 0 0 10px 0;
 }
 
+.fun-fact {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #a9eaff;
+    border: #19355c solid 2px;
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+
+.fun-fact p {
+    margin: 0 0 10px 0;
+}
+
+h3 {
+    padding-bottom: 1rem;
+}
+
+.boks-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.boks-2 > section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.boks-2 div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
 .profil-billede {
     border-radius: 50%;
-    width: 175px;
-    overflow: hidden;
-    float: left;
+    width: 90%;
+    margin: 0rem 1rem;
 
 }
 
@@ -30,3 +84,4 @@
     justify-content: center;
     margin: 10px;
 }
+
