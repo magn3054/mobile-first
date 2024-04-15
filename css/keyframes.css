@@ -1,4 +1,4 @@
-@keyframes headertext {
+@keyframes wordmark {
     0% {
         opacity: 1;
     }
@@ -6,7 +6,7 @@
         opacity: 0;
     }
 }
-@keyframes headertext-reverse {
+@keyframes wordmark-reverse {
     0% {
         opacity: 0;
     }
