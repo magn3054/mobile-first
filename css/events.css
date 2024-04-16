@@ -26,7 +26,6 @@ h2{
     justify-content:center;
     flex-direction: column;
     text-align:flex-start;
-    text-align:center;
     padding: 0 3rem;
 }
 
@@ -72,3 +71,9 @@ button {
     border-radius: 2.8rem;
     transition: all 0.3s ease 0s;
   }
+
+.pris{
+    display: flex;
+    justify-content: center;
+    padding: 0 3rem;
+}
