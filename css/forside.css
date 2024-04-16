@@ -14,19 +14,12 @@ body {
     overflow-x: hidden;
 }
 
-/* .page, article, section {
-    border: red solid 2px
-} */
-
 .page {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
     width: 100%;
-    /* position: absolute; */
-    transform: translateX(0vw);
-    animation: none;
 }
 
 article {
