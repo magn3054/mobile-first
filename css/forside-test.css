@@ -1,7 +1,7 @@
 :root {
     --darkblue: #19355c;
     --lightblue: #a9eaff;
-    --white: #ffffff; 
+    --white: #ffffff;
 }
 
 * {
@@ -11,42 +11,105 @@
 }
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 3;
     background-color: var(--lightblue);
     width: 100%;
     height: 4rem;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo, h1, .headertext, .tab {
+header .logo, .overlay > .logo  {
+    margin: 0.25rem 0.5rem;
     min-width: 4rem;
-    border: red solid 2px;
+    max-width: 4.1rem;
+    z-index: 1000;
 }
 
-.logo {
-    margin: 0rem 0.5rem;
+.headerlinks {
+    position: absolute;
+    display: none;
 }
 
-#headertext {
+#wordmark {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-width: 50%;
+    height: 100%;
+    animation: none;
 }
 
-h1{
+header h1{
     color: var(--darkblue);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    font-size: clamp(1rem, 5vw, 3rem); /* Gør fonten responsiv i alt mellem 16 og 32 pixels, dog aldrig strørre end 5% af viewporten */
+    font-size: clamp(1rem, 5vw, 3rem); 
 }
 
-.tab{
+.burger{
+    width: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0rem 1rem;
+    margin: 0.2rem;
 }
 
+.overlay {
+    height: 100%;
+    width: 0;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 5;
+    background-color: var(--lightblue);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    padding: 0 4rem;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: var(--darkblue);
+    display: block;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    right: 0;
+    width: 4rem;
+    padding: 0rem 1rem;
+    margin: 1rem 0.2rem;
+}
+
+.dropdown {
+    left: 0;
+}
+
+.dropdown-container {
+    display: none;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+    }

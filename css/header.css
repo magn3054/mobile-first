@@ -1,7 +1,7 @@
 :root {
     --darkblue: #19355c;
     --lightblue: #a9eaff;
-    --white: #ffffff; 
+    --white: #ffffff;
 }
 
 * {
@@ -22,15 +22,10 @@ header {
     align-items: center;
 }
 
-header .logo {
+header .logo, .overlay > .logo  {
     margin: 0.25rem 0.5rem;
     min-width: 4rem;
     max-width: 4.1rem;
-}
-
-.headerlinks {
-    position: absolute;
-    display: none;
 }
 
 #wordmark {
@@ -48,10 +43,10 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(1rem, 5vw, 3rem); /* Gør fonten responsiv i alt mellem 16 og 32 pixels, dog aldrig strørre end 5% af viewporten */
+    font-size: clamp(1rem, 5vw, 3rem); 
 }
 
-.tab{
+.burger{
     width: 4rem;
     display: flex;
     flex-direction: column;
@@ -61,134 +56,73 @@ header h1{
     margin: 0.2rem;
 }
 
-
-/* Drop-out menuen */
-
-.sidebar {
-    display: none;
-    flex-direction: column;
-    align-items: center;
+.overlay {
+    height: 100%;
+    width: 0;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 5;
     background-color: var(--lightblue);
-    min-height: max-content;
-    height: 100vh;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 15%;
     width: 100%;
+    padding: 0 4rem;
+}
+  
+.overlay a {
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--darkblue);
+    display: block;
+}
+  
+.overlay .closebtn {
     position: absolute;
-    z-index: 1;
-    transform: translateX(100vw);
-    animation: none;
+    right: 0;
+    width: 4rem;
+    padding: 0rem 1rem;
+    margin: 1rem 0.2rem;
 }
 
-.undermenu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0 10%;
-    background-color: var(--lightblue);
-
-    &:first-of-type {
-        margin-top: 25%;
-    }
-    &:last-of-type {
-        padding-bottom: 5%;
-    }
-}
-
-.line {
+.sub-plus {
     display: flex;
     justify-content: space-between;
-    margin: 1rem 0.5rem 0.5rem;
 }
 
-.line h3 {
-    color: var(--darkblue);
-    font-weight: bolder;
+.dropdown {
+    left: 0;
 }
 
-.line > img {
-    height: 1.5rem;
+.plusicon {
     width: 1.5rem;
+    margin-right: 1rem;
 }
 
-
-/* Drop-down i drop-out */
 .dropdown-container {
     display: none;
-    flex-direction: column;
-    padding-left: 0.5rem;
-    margin-bottom: 1rem;
-    background-color: var(--lightblue);
 }
 
-.dropdown-container > a, .line > h3 > a {
-    color: var(--darkblue);
-    text-decoration: none;
-    margin: 0.25rem;
+.dropdown-container a {
+    font-size: 1.25rem;
+    padding-left: 1rem;
 }
 
-@keyframes wordmark {
-    0% {
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
-}
-@keyframes wordmark-reverse {
-    0% {
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+.overlaysquiggly:last-of-type {
+    margin-bottom: 2rem;
 }
 
-@keyframes sidebaranimation {
-    0% {
-        transform: translateX(100vw);
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
     }
-    100% {
-        transform: translateX(0vw);
-    }
-}
-@keyframes sidebaranimation-reverse {
-    0% {
-        transform: translateX(0vw);
-    }
-    100% {
-        transform: translateX(100vw);
-    }
-}
-
-
-/* @media (min-width: 800px) {
-    body {
-        background-color: rgb(127, 105, 105);
-    }
-
-    .tab, .wave, h1, .wordmark {
-        position: absolute;
-        display: none;
-    }
-
-    header {
-        min-height: 5rem;
-        justify-content: center;
-    }
-
-    .logo {
-        height: 4rem;
-    }
-    
-    
-    
-    .headerlinks ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between
-    }
-
-    .headerlinks a {
-        color: var(--darkblue);
-        text-decoration: none;
-    }
-} */

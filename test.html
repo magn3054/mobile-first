@@ -6,28 +6,147 @@
     <title>Aarhus Havnerundfart</title>
     <link rel="icon" href="img/aarhus-havnerundfart-logo_bg.webp" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/header.css"> -->
     <link rel="stylesheet" href="css/forside-test.css">
+    <link rel="stylesheet" href="css/forside.css">
+    <link rel="stylesheet" href="css/slideshow.css">
 </head>
 <body>
     <header>
         <img class="logo" src="img/aarhus-havnerundfart-logo.webp" alt="Hjemmesidens logo" ></img>
-        <div id="headertext">
+        <!-- <div class="headerlinks">
+            <ul>
+                <li><a href="#">Sejlplan</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Aarhus til søs</a></li>
+                <li><a href="#">Information</a></li>
+                <li><a href="#">Om os</a></li>
+            </ul>
+        </div> -->
+        <div id="wordmark">
             <h1>Aarhus Havnerundfart</h1>
-            <!-- <img class="wave" src="" alt=""> -->
+            <img class="wave" src="img/squiggly-line.svg" alt="">
         </div>
-        <div class="tab" id="closed">
-            <img class="burger" src="icons/burger-icon.svg" alt="Tre streger over hinanden, åbner sidemenuen">
+        <div class="burger">
+            <img onclick="openNav()" src="icons/burger-icon.svg" alt="Tre streger over hinanden, åbner sidemenuen">
         </div>
     </header>
 
-    <main>
+    <div id="Nav" class="overlay">
+        <img class="closebtn" onclick="closeNav()" src="icons/cross-icon.svg" alt="Kryds" ></img>
+        <img class="logo" src="img/aarhus-havnerundfart-logo.webp" alt="Hjemmesidens logo" ></img>
+        <div class="overlay-content">
+            <a href="#">Sejlplan</a>
+            <img class="headersquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
+            
+            <a href="#" class="dropdown">Events</a>
+                <div class="dropdown-container">
+                    <a href="#">Gin og tonic</a>
+                    <a href="#">Kaptajn</a>
+                    <a href="#">Det sidste</a>
+                </div>
+            <img class="headersquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
+            
+            <a href="#">Booking</a>
+            <img class="headersquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
+            
+            <a href="#">Aarhus til søs</a>
+            <img class="headersquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
+            
+            <a href="#">Information</a>
+            <img class="headersquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
+            
+            <a href="#">Om os</a>
+            <img class="headersquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
+        </div>
+    </div>
 
+
+    <main>
+        <div class="page">
+            <div class="slideshow">
+                <div class="slides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="https://aarhushavnerundfart.dk/wp-content/uploads/1440-%C3%97-719px.png">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="slides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="https://aarhushavnerundfart.dk/wp-content/uploads/Design-uden-navn-77.png">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="slides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="https://aarhushavnerundfart.dk/wp-content/uploads/Design-uden-navn-16-1440x811.png">
+                  <div class="text">Caption Three</div>
+                </div>
+                
+                <img class="prev" onclick="plusSlides(-1)" src="icons/arrow-icon.svg" alt="Venstre pil">
+                <img class="next" onclick="plusSlides(1)" src="icons/arrow-icon.svg" alt="Højre pil">
+            </div>
+                
+            <div class="indicators">
+                <img src="icons/boat-icon.svg" alt="Båd ikon" class="indicator" onclick="currentSlide(1)">
+                <img src="icons/boat-icon.svg" alt="Båd ikon" class="indicator" onclick="currentSlide(2)">
+                <img src="icons/boat-icon.svg" alt="Båd ikon" class="indicator" onclick="currentSlide(3)">
+            </div>
+
+            <article>
+                <section>
+                    <h4>Overskrift</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor consequatur sequi veniam aut quisquam dicta sunt, rerum explicabo obcaecati cupiditate reprehenderit nihil impedit? Mollitia consectetur eos, quidem beatae magnam accusantium ipsa.</p>
+                </section>
+                <section>
+                    <h4>Overskrift</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor consequatur sequi veniam aut quisquam dicta sunt, rerum explicabo obcaecati cupiditate reprehenderit nihil impedit? Mollitia consectetur eos, quidem beatae magnam accusantium ipsa.</p>
+                </section>
+                <section>
+                    <h4>Overskrift</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor consequatur sequi veniam aut quisquam dicta sunt, rerum explicabo obcaecati cupiditate reprehenderit nihil impedit? Mollitia consectetur eos, quidem beatae magnam accusantium ipsa.</p>
+                </section>
+                <section>
+                    <h4>Overskrift</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor consequatur sequi veniam aut quisquam dicta sunt, rerum explicabo obcaecati cupiditate reprehenderit nihil impedit? Mollitia consectetur eos, quidem beatae magnam accusantium ipsa.</p>
+                </section>
+                <section>
+                    <h4>Overskrift</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor consequatur sequi veniam aut quisquam dicta sunt, rerum explicabo obcaecati cupiditate reprehenderit nihil impedit? Mollitia consectetur eos, quidem beatae magnam accusantium ipsa.</p>
+                </section>
+                <section>
+                    <h4>Overskrift</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor consequatur sequi veniam aut quisquam dicta sunt, rerum explicabo obcaecati cupiditate reprehenderit nihil impedit? Mollitia consectetur eos, quidem beatae magnam accusantium ipsa.</p>
+                </section>
+            </article>
+        </div>
+        <footer>
+            <!-- <section class="top">
+                <div class="venstre">
+                    <p>Booking og kontakt</p>
+                    <p>Tlf: <a href="+4535113539"></a>+45 35 11 35 39</p>
+                    <p>Mail: <a href="info@fjordtours.dk"></a>info@fjordtours.dk</p>
+                </div>
+                <div class="hojre">
+                    <p>Info</p>
+                    <p>Handelsbetingelser</p>
+                    <p>Privatlivspolitik</p>
+                    <p>Ledige stillinger</p>
+                </div>
+            </div>
+            <section class="bot">
+                <i class="fa-brands fa-linkedin">Facebook</i>
+                <i class="fa-brands fa-linkedin">Instgram</i>
+                <i class="fa-brands fa-linkedin">Linkedin</i>
+                <i class="fa-brands fa-linkedin">Google My Business</i>
+            </section> -->
+
+        </footer>
     </main>
 
-    <footer>
-
-    </footer>
 
 <script src="js/sidemenu.js"></script>
+<script src="js/slideshow.js"></script>
 </body>
 </html>
