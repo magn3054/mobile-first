@@ -1,7 +1,6 @@
 const burgerIcon = document.getElementById('burger');
 const headtext = document.getElementById('wordmark');
 const sidebar = document.querySelector('.sidebar');
-const page = document.querySelector('.page');
 
 burgerIcon.addEventListener('click', function() {
     // Toggle burger icon src
