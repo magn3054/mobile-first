@@ -9,6 +9,7 @@
     <link rel="stylesheet"   href="css/events.css">
     <link rel="stylesheet"   href="css/style.css">
     <link rel="stylesheet"   href="css/header.css">
+    <link rel="stylesheet"   href="css/footer.css">
 </head>
 
 <body>
@@ -29,18 +30,20 @@
         <div class="overlay-content">
             <div class="sub-plus"><a href="#">Sejlplan</a></div>
             <img class="overlaysquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
+            
             <div class="sub-plus"><a href="#">Events</a><img class="plusicon dropdown" src="icons/plus-icon.svg" alt=""></div>
                 <div class="dropdown-container">
-                    <a href="#">Havnerundfart i Aarhus</a>
-                    <a href="#">Gin og Tonic til søs</a>
-                    <a href="#">Livemusik</a>
-                    <a href="#">Strikketur til søs</a>
-                    <a href="#">Kaptajn for en dag</a>
-                    <a href="#">Under overfladen</a>
-                    <a href="#">Bølger og brosten</a>
-                    <a href="#">Vinsmagning til søs</a>
-                    <a href="#">Sankt Hans</a>
-                    <a href="#">Privat booking</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#havnerundfart-i-aarhus">Havnerundfart i Aarhus</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#gintonic">Gin og Tonic til søs</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#minikoncerter-til-søs">Minikoncerter til søs</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#strik-til-søs">Strikketur til søs</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#kaptajn-for-en-dag">Kaptajn for en dag</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#under-overfladen">Under overfladen</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#bølger-og-brosten">Bølger og brosten</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#vinsmagning">Vinsmagning til søs</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#sankt-hans">Sankt Hans</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#eksplotion">Eksplosion på havnen</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#pub-quiz">Pubquiz til søs</a>
                 </div>
             <img class="overlaysquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
             
@@ -56,17 +59,18 @@
             
             <div class="sub-plus"><a href="#">Information</a><img class="plusicon dropdown" src="icons/plus-icon.svg" alt=""></div>
                 <div class="dropdown-container">
-                    <a href="#">Menu kort</a>
+                    <a href="http://havnerundfart.mdamsgaard.dk/menu.kort.html">Menu kort</a>
                     <a href="#">Gavekort</a>
                     <a href="#">Aflysning</a>
                     <a href="#">Kontakt</a>
                 </div>
             <img class="overlaysquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
             
-            <div class="sub-plus"><a href="#">Om os</a><img class="plusicon dropdown" src="icons/plus-icon.svg" alt=""></div>
+            <div class="sub-plus"><a href="http://havnerundfart.mdamsgaard.dk/om-os.html">Om os</a><img class="plusicon dropdown" src="icons/plus-icon.svg" alt=""></div>
                 <div class="dropdown-container">
-                    <a href="#">Rute</a>
-                    <a href="#">Mød skibene</a>
+                    <a href="#">Udforsk vores verden</a>
+                    <a href="#">Fun fact</a>
+                    <a href="#">Personale</a>
                 </div>
             <img class="overlaysquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
         </div>
@@ -74,11 +78,11 @@
 
 
     <div class="havnerundfart">
-        <h2>Havnerundfart i Aarhus</h2>
+        <h2 id="havnerundfart-i-aarhus">Havnerundfart i Aarhus</h2>
         <img src="img/havnerundfart.webp" alt="" class="billede">
         <div class="tekst">
             <p>Oplev Aarhus fra vandsiden med en guidet havnerundfart. Nyd den maritime stemning og lyt til spændende historier om det gamle- og nye Aarhus, samt det moderne byområde Aarhus Ø med helt nyopført skandinavisk arkitektur i verdensklasse.</p>
-            <button><a href=""><strong>Se sejlplan her</strong></a></button>
+            <button><a class="sejlplan" href="">Se sejlplan her</a></button>
         </div>
         <div class="kalender">
             <section>
@@ -102,7 +106,7 @@
     </div>
 
     <div class="gin-og-tonic">
-        <h2>Gin & Tonic</h2>
+        <h2 id="gin-tonic">Gin & Tonic</h2>
         <img src="img/gin-og-tonic.webp" alt="" class="billede">
         <div class="tekst">
             <p>Findes der egentligt noget bedre end en dejlig afstemt, kold og læskende Gin & Tonic i sommervarmen?</p>
@@ -123,7 +127,7 @@
 
 
     <div class="livemusik">
-        <h2>Minikoncerter til søs</h2>
+        <h2 id="minikoncerter-til-søs">Minikoncerter til søs</h2>
         <img src="img/livemusik.webp" alt="" class="billede">
         <div class="tekst">
             <p>På udvalgte fredage og lørdage hen over sommeren kan du opleve minikoncerter til søs når nogle af Aarhus’ dygtigste musikere spille live ombord på Havternen.</p>
@@ -180,7 +184,7 @@
     </div>
 
     <div class="strik">
-        <h2>Strikketur til søs</h2>
+        <h2 id="strik-til-søs">Strikketur til søs</h2>
         <img src="img/strik.webp" alt="" class="billede">
         <div class="tekst">
             <p>Kom med på en hyggelig strikketur til søs på Havternen</p>
@@ -203,7 +207,7 @@
     </div>
 
     <div class="kaptajn-for-en-dag">
-        <h2>Kaptajn for en dag</h2>
+        <h2 id="kaptajn-for-en-dag">Kaptajn for en dag</h2>
         <img src="img/kaptajn-for-en-dag.webp" alt="" class="billede">
         <div class="tekst">
             <p>Kære børnefamilier,</p>
@@ -242,7 +246,7 @@
     </div>
 
     <div class="under-overfladen">
-        <h2>Under overfladen</h2>
+        <h2 id="under-overfladen">Under overfladen</h2>
         <img src="img/under-overfladen.webp" alt="" class="billede">
         <div class="tekst">
             <p>Kom med os på en anderledes tur på vandet, når vores søde og dygtige guide, Julie Fulgsang Jeppesen fortæller om alt det vi ikke altid lige ser, når vi sejler almindelige havnerundfarter – nemlig dyrelivet i Aarhusbugten.</p>
@@ -268,7 +272,7 @@
     </div>
 
     <div class="bølger-og-brosten">
-        <h2>Bølger & brosten</h2>
+        <h2 id="bølger-og-brosten">Bølger & brosten</h2>
         <img src="img/brosten.webp" alt="" class="billede">
         <div class="tekst">
             <p>Turen begynder til søs på Havternen, som du finder ved DOKK1. Her vil den dygtige guide fortælle om Aarhus set fra vandsiden med fokus på vikingetid og middelalder. Denne del af turen tager ca. 1. time.</p>
@@ -291,7 +295,7 @@
     </div>
 
     <div class="vinsmagning">
-        <h2>Vinsmagning til søs</h2>
+        <h2 id="vinsmagning">Vinsmagning til søs</h2>
         <img src="img/vinsmagning.webp" alt="" class="billede">
         <div class="tekst">
             <p>På denne skønne tur tager vi fat på en række spændende vin der med fordel kan bruges hen over sommeren. Vi kommer forbi både hvidvin, rosé og naturligvis rødvin. Altså god inspiration til de forhåbentligt varme sommeraftener.</p>
@@ -317,7 +321,7 @@
     </div>
 
     <div class="sankt-hans">
-        <h2>Sank Hans fra vandet</h2>
+        <h2 id="sankt-hans">Sank Hans fra vandet</h2>
         <img src="img/sankt-hans.webp" alt="" class="billede">
         <div class="tekst">
             <p>Fejr Sankthansaften ombord på Havternen den 23. juni</p>
@@ -356,7 +360,7 @@
     </div>
 
     <div class="pub-quiz">
-        <h2>Pubquiz til søs</h2>
+        <h2 id="pub-quiz">Pubquiz til søs</h2>
         <img src="img/pubquiz.webp" alt="" class="billede">
         <div class="tekst">
             <p>Velkommen til pubquiz til søs, hvor vi kombinerer en hyggelig tur på vandet med en traditionel pubquiz.</p>
@@ -385,6 +389,28 @@
             <img src="img/squiggly-line.svg" alt="" class="squiggly-line">
         </div>
     </div>
+
+    <footer>
+        <section class="topfooter">
+            <div class="venstrefooter">
+                <p>Booking og kontakt</p>
+                <p>Tlf: <a href="+4535113539"></a>+45 35 11 35 39</p>
+                <p>Mail: <a href="info@fjordtours.dk"></a>info@fjordtours.dk</p>
+            </div>
+            <div class="hojrefooter">
+                <p>Info</p>
+                <a href="#"><p>Handelsbetingelser</p></a>
+                <a href="#"><p>Privatlivspolitik</p></a>
+                <a href="#"><p>Ledige stillinger</p></a>
+            </div>
+        </section>
+        <section class="botfooter">
+            <a href="https://www.facebook.com/Aarhushavnerundfart" class="socials"><img src="icons/facebook-icon.svg">Facebook</a>
+            <a href="https://www.instagram.com/aarhushavnerundfart/" class="socials"><img src="icons/instagram-icon.svg">Instgram</a>
+            <a href="https://www.linkedin.com/company/aarhushavnerundfart/" class="socials"><img src="icons/linkedin-icon.svg">Linkedin</a>
+        </section>
+    </footer>
+
 <script src="js/sidemenu.js"></script>
 </body>
 </html>
