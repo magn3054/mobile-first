@@ -1,5 +1,10 @@
-#event{
-    font-size: 2.3rem;
+#event {
+    font-size: rem;
+}
+
+.event {
+    width: 30%;
+    height: 100%;
 }
 
 h2{
@@ -80,7 +85,7 @@ button {
     
 }
 
-#eksplotion{
+#eksplosion{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -92,4 +97,20 @@ button {
 #kaptajn-pris{
     display: flex;
     justify-content: space-between;
+}
+
+
+@media (max-width: 1000px) {
+    body {
+        background-color: tan;
+    }
+
+    h2{
+        margin: 1rem 0 0.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        Font-size: 2rem;
+    
+    }
 }
