@@ -59,11 +59,10 @@ h2{
    margin: 1rem 3rem 0 3rem;
 }
 
-.sejlplan{
+a{
     text-decoration: none;
     text-decoration: underline;
     color: #ffffff;
-    font-weight: bold;
 }
 
 button {
@@ -100,17 +99,6 @@ button {
 }
 
 
-@media (max-width: 1000px) {
-    body {
-        background-color: tan;
-    }
+@media (min-width: 1000px) {
 
-    h2{
-        margin: 1rem 0 0.5rem 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        Font-size: 2rem;
-    
-    }
 }
