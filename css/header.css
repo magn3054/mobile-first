@@ -139,7 +139,6 @@ header h1{
         margin: 0.25rem 0.5rem;
         min-width: 4rem;
         max-width: 4.1rem;
-        border: red ;
     }
     
     #wordmark {
@@ -148,7 +147,7 @@ header h1{
         justify-content: space-around;
         align-items: center;
         min-width: 90%;
-        padding: 0 20rem;
+        padding: 0 4rem;
         height: 100%;
     }
 
@@ -156,18 +155,19 @@ header h1{
         display: flex;
         text-decoration: none;
         color: var(--darkblue);
+        
     }
 
     .wave, header h1, .burger {
         display: none;
     }
-      
-    /* .subnav {
-        overflow: hidden;
-    }*/
     
+    .subnav {
+        max-width: max-content;
+        position: relative;
+    }
+
     .subnav .subnavbtn {
-        border: none;
         outline: none;
         padding: 1.8rem 1rem;
         background-color: inherit;
@@ -185,14 +185,16 @@ header h1{
         display: none;
         position: absolute;
         background-color: var(--darkblue);
-        min-width: max-content;
+        border-radius: 0 0 0.75rem 0.75rem;
         z-index: 1;
+        width: 100%;
+        min-width: max-content;
     }
      
     .subnav-content a {
         text-decoration: none;
         color: var(--lightblue);
-        font-size: 1.25rem;
+        font-size: 1rem;
         padding: 0.5rem 0.75rem 0.75rem 1rem;
     }
       
@@ -208,6 +210,5 @@ header h1{
     .subnav:hover .subnav-content {
         display: flex;
         flex-direction: column;
-        border-radius: 0 0 0.75rem 0.75rem;
     } 
 }
