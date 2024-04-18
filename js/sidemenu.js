@@ -37,7 +37,9 @@ plusicons.forEach(plusicon => {
 });
 
 
-/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+/* Det her var første udkast til at hide headeren når man scrollede 
+  men den begyndte at flimre på forsiden pga. slideshow ændrer scrollY værdien
+  så der er tilføjet et threshold i koden under for at korrigere for dette */
 // var prevScrollpos = window.scrollY;
 // window.onscroll = function() {
 //   var currentScrollPos = window.scrollY;

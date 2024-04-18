@@ -1,17 +1,13 @@
 :root {
     --darkblue: #19355c;
     --lightblue: #a9eaff;
-    --white: #ffffff; 
+    --white: #ffffff;
 }
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-
-body {
-    overflow-x: hidden;
 }
 
 .page {
@@ -41,4 +37,22 @@ h4 {
 p {
     font-size: clamp(0.1rem, 5vw, 1rem);
     color: var(--darkblue);
+    padding: 0.5rem 0 0 0.5rem;
+}
+
+@media screen and (min-width: 800px) {
+    article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section {
+        padding: 0 2rem;
+        width: 50%;
+    }
+
+    /* section > p {
+        padding-left: 0.75rem;
+    } */
 }
