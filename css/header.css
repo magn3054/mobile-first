@@ -38,6 +38,10 @@ header .logo, .overlay > .logo  {
     animation: none;
 }
 
+.navbar, .subnav-content {
+    display: none;
+}
+
 header h1{
     color: var(--darkblue);
     display: flex;
@@ -118,11 +122,92 @@ header h1{
     margin-bottom: 2rem;
 }
 
-@media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
+@media screen and (min-width: 800px) {
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        background-color: var(--lightblue);
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    header .logo, .overlay > .logo  {
+        margin: 0.25rem 0.5rem;
+        min-width: 4rem;
+        max-width: 4.1rem;
+        border: red ;
+    }
+    
+    #wordmark {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 90%;
+        padding: 0 20rem;
+        height: 100%;
+    }
+
+    .navbar {
+        display: flex;
+        text-decoration: none;
+        color: var(--darkblue);
+    }
+
+    .wave, header h1, .burger {
+        display: none;
+    }
+      
+    /* .subnav {
+        overflow: hidden;
+    }*/
+    
+    .subnav .subnavbtn {
+        border: none;
+        outline: none;
+        padding: 1.8rem 1rem;
+        background-color: inherit;
+        margin: 0;
+    }
+      
+    .navbar a:hover, .subnav:hover .subnavbtn {
+        background-color: var(--darkblue);
+        color: var(--lightblue);
+        border-radius: 0.75rem 0.75rem 0 0;
+        padding: 1.8rem 1rem 1.8rem 1rem;
+    }
+      
+    .subnav-content {
+        display: none;
+        position: absolute;
+        background-color: var(--darkblue);
+        min-width: max-content;
+        z-index: 1;
+    }
+     
+    .subnav-content a {
+        text-decoration: none;
+        color: var(--lightblue);
+        font-size: 1.25rem;
+        padding: 0.5rem 0.75rem 0.75rem 1rem;
+    }
+      
+    .subnav-content a:hover {
+        background-color: #eee;
+        color: var(--darkblue);
+
+        &:last-of-type {
+            border-radius: 0 0 0.75rem 0.75rem;
         }
     }
+      
+    .subnav:hover .subnav-content {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0 0 0.75rem 0.75rem;
+    } 
+}
