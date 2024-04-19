@@ -12,11 +12,6 @@ html{
     color: var(--darkblue);
 }
 
-.on-style {
-    background-color: #19355c; 
-    color: #a9eaff;
-}
-
 @media screen and (min-width: 800px) {
     .home-bg {
         display: flex;
