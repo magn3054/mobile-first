@@ -17,21 +17,30 @@ html{
     color: #a9eaff;
 }
 
+.home {
+    /* background-color: var(--darkblue); */
+}
+
+/* .bread {
+    position: relative;
+    display: inline-block;
+  }
+  
 .bread::before {
     content: '';
     position: absolute;
-    top: 0.7rem;
-    left: 0.25rem;
-    width: 4.5rem;
-    height: 3.7rem;
-    border-radius: 25%;
-    background: rgba(255, 0, 0, 0.625); /* Adjust opacity as needed */
-    z-index: 1; 
+    top: -0.3rem; /* Adjust to position the glow relative to the image *
+    left: -0.3rem; /* Adjust to position the glow relative to the image *
+    width: calc(100% + 0.6rem); /* Adjust to cover the entire image plus a glow effect *
+    height: calc(100% + 0.6rem); /* Adjust to cover the entire image plus a glow effect *
+    background: #24c4f9c1; /* Adjust opacity as needed *
+    border-radius: 50%; /* Adjust to create a rounded glow *
+    z-index: -1; /* Ensure the glow is behind the image *
+    filter: blur(0.6rem); /* Adjust blur radius for the glow effect *
 }
-
-.home {
-  display: block;
-  border-radius: 10px; /* Adjust border radius as needed */
-  /*filter: brightness(1.5) blur(2px); /* Adjust brightness and blur values to create a glowing effect */
-  z-index: 2; /* Ensure the image is above the pseudo-element */
-}
+  
+.bread .home {
+    display: block;
+    border-radius: 0.3rem; /* Adjust to match the border radius of the glow *
+} */
+  
