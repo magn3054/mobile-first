@@ -41,3 +41,60 @@ img {
     grid-column: 1 / span 2; 
     margin-top: 10px; 
 }
+
+
+@media screen and (min-width: 1000px) {
+    main {
+        margin: 0 5rem;
+        /* border: red solid 2px; */
+    }
+
+    .overtest {
+        display: flex;
+        flex-direction: row;
+        /* border: blue solid 2px; */
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .test {
+        display: flex;
+        flex-flow: column wrap;
+        width: 50%;
+        border-right: #19355c solid 2px;
+
+        & > h2 {
+            align-self: center;
+            min-height: 4rem;
+            min-width: 10rem;
+            padding: 0.62rem 0.5rem 0 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &:last-of-type {
+            border-right: none;
+        }
+    }
+
+    li {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .drink {
+        width: 50%;
+    }
+
+    .price {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    li > img {
+        width: 100%;
+    }
+    
+}
