@@ -1,8 +1,3 @@
-* {
-    color: #19355c;
-    
-}
-
 #om-os {
     font-size: 2.3rem;
 }
@@ -20,6 +15,7 @@
 
 .boks-1 a {
     text-decoration: none;
+    color: #19355c;
 }
 
 .boks-1 p {
@@ -44,7 +40,7 @@
     margin: 0 0 10px 0;
 }
 
-h3 {
+.fun-fact h3 {
     padding-bottom: 1rem;
 }
 

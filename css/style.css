@@ -12,26 +12,23 @@ html{
     color: var(--darkblue);
 }
 
-.on-style {
-    background-color: #19355c; 
-    color: #a9eaff;
-}
+@media screen and (min-width: 800px) {
+    .home-bg {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        width: 4rem;
+        height: 100%;
+        background-color: var(--darkblue); 
+        padding: 0 5rem 0 0;
+    }
 
-.bread::before {
-    content: '';
-    position: absolute;
-    top: 0.7rem;
-    left: 0.25rem;
-    width: 4.5rem;
-    height: 3.7rem;
-    border-radius: 25%;
-    background: rgba(255, 0, 0, 0.625); /* Adjust opacity as needed */
-    z-index: 1; 
-}
+    .home {
+        filter: hue-rotate(353deg) saturate(0.7) brightness(5);
+        filter: hue-rotate(353deg) saturate(1) brightness(10);
+        margin: 0;
+        width: 100%;
+    }
 
-.home {
-  display: block;
-  border-radius: 10px; /* Adjust border radius as needed */
-  /*filter: brightness(1.5) blur(2px); /* Adjust brightness and blur values to create a glowing effect */
-  z-index: 2; /* Ensure the image is above the pseudo-element */
 }
+  
