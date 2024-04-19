@@ -37,6 +37,8 @@ header .logo, .overlay > .logo  {
     animation: none;
 }
 
+/* Navbar til små skærme såsom mobiler */
+
 .navbar, .subnav-content {
     display: none;
 }
