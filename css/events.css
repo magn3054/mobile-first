@@ -115,6 +115,8 @@ button {
         width: 100%;
         padding: 0 8%;
     }
+
+      
     
     .tusind{
         display: flex;
@@ -165,7 +167,8 @@ button {
     }
     
     .squiggly-line{
-       margin: 0 3rem 1.5rem 3rem;
+       margin: 3rem 8% 1.5rem 8%;
+       
     }
     
     a {
