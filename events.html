@@ -24,7 +24,7 @@
             </div>
             
             <div class="subnav">
-                <a class="navbar subnavbtn" href="havnerundfart.mdamsgaard.dk/events.html" style="background-color: #19355c; color: #a9eaff;"><h3>Events</h3></a>
+                <a class="navbar subnavbtn on-style" href="havnerundfart.mdamsgaard.dk/events.html"><h3>Events</h3></a>
                 <div class="subnav-content">
                     <a href="https://havnerundfart.mdamsgaard.dk/events.html#havnerundfart-i-aarhus">Havnerundfart i Aarhus</a>
                     <a href="https://havnerundfart.mdamsgaard.dk/events.html#gintonic">Gin og Tonic til søs</a>
@@ -159,7 +159,17 @@
                 </section>
             </div>
         </div>
-        <img src="img/squiggly-line.svg" alt="Bøljet linje" class="squiggly-line">
+        <picture>
+            <!-- Source 1: Default image -->
+            <source srcset="img/squiggly-line.svg" media="(max-width: 1049px)" type="image/svg+xml">
+        
+            <!-- Source 2: Image for screens up to 1050px width -->
+            <source srcset="img/squiggly-line-thin.svg" media="(min-width: 1050px)" type="image/svg+xml">
+        
+            <!-- Fallback image -->
+            <img src="img/squiggly-line.svg" alt="Bøljet linje" class="squiggly-line">
+        </picture>
+        
     </div>
 
     <div class="gin-og-tonic">

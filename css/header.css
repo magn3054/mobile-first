@@ -24,8 +24,7 @@ header {
 
 header .logo, .overlay > .logo  {
     margin: 0.25rem 0.5rem;
-    min-width: 4rem;
-    max-width: 4.1rem;
+    width: 4rem;
 }
 
 #wordmark {
