@@ -16,6 +16,9 @@
         <div class="home-bg">
             <img class="logo home" src="img/aarhus-havnerundfart-logo.webp" alt="Hjemmesidens logo" onclick="Home()">
         </div>
+
+        <!-- Den her del af koden er til store skærme hvor navbar er synlig med undermenuerne, 
+            men har på skærme mindre end 1000px display propertien til "none" for at skjule den -->
         <div id="wordmark">
             <h1>Aarhus Havnerundfart</h1>
             <img class="wave" src="img/squiggly-line.svg" alt="Bøljet linje">
@@ -78,6 +81,8 @@
         </div>
     </header>
 
+    <!-- Den her del af koden er kun til små skærme og opbygger navbaren, 
+        som dropper ud med drop-downs af under-undermenuerne -->
     <div id="Nav" class="overlay">
         <img class="closebtn" onclick="closeNav()" src="icons/cross-icon.svg" alt="Kryds" >
         <img class="logo" src="img/aarhus-havnerundfart-logo.webp" alt="Hjemmesidens logo" >
@@ -133,35 +138,31 @@
 
     <main>
         <div class="page">
+            <!-- slideshow klassen viser 3 billeder taget af Aarhus havnerundfart som man kan klikke igennem.
+                billederne skifter med hjæælp fra javascript -->
             <div class="slideshow">
                 <div class="slides fade">
                   <div class="numbertext">1 / 3</div>
                   <img src="https://aarhushavnerundfart.dk/wp-content/uploads/1440-%C3%97-719px.png" alt="To både foran Dokk1">
-                  <!-- <div class="text">Caption Text</div> -->
                 </div>
                 
                 <div class="slides fade">
                   <div class="numbertext">2 / 3</div>
                   <img src="https://aarhushavnerundfart.dk/wp-content/uploads/Design-uden-navn-77.png" alt="Billede af Aarhus Ø taget fra vandet">
-                  <!-- <div class="text">Caption Two</div> -->
                 </div>
                 
                 <div class="slides fade">
                   <div class="numbertext">3 / 3</div>
                   <img src="https://aarhushavnerundfart.dk/wp-content/uploads/Design-uden-navn-16-1440x811.png" alt="Billede af Aarhus sibsværft taget fra vandet">
-                  <!-- <div class="text">Caption Three</div> -->
                 </div>
                 
                 <img class="prev" onclick="plusSlides(-1)" src="icons/arrow-icon.svg" alt="Venstre pil">
                 <img class="next" onclick="plusSlides(1)" src="icons/arrow-icon.svg" alt="Højre pil">
             </div>
-                
-            <!-- <div class="indicators">
-                <img src="icons/boat-icon.svg" alt="Båd ikon" class="indicator" onclick="currentSlide(1)">
-                <img src="icons/boat-icon.svg" alt="Båd ikon" class="indicator" onclick="currentSlide(2)">
-                <img src="icons/boat-icon.svg" alt="Båd ikon" class="indicator" onclick="currentSlide(3)">
-            </div> -->
 
+            <!-- Den her del af koden er de artikler der beskriver firmaet og hvad de tilbyder. 
+                Det er opsat med hver tekst element er omringet af en container så deres flex-direction nemt
+                kan ændres når forskellige media-queries er brugt -->
             <article>
                 <section>
                     <h4>Oplev Aarhus fra Vandet</h4>
@@ -181,6 +182,9 @@
                 </section>
             </article>
         </div>
+
+        <!-- På samme måde som article containeren er footeren også opbygget så man nemt kan ændre retningen af 
+            flex-direction til forskellige skærm størrelser -->
         <footer>
             <section class="topfooter">
                 <div class="venstrefooter">
