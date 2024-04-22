@@ -1,0 +1,38 @@
+@media screen and (min-width: 900px) {
+    .tekst {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .boks-1 {
+        margin: 2rem;
+        width: 70%;
+        margin-right: 10rem;
+        margin-left: 20rem;
+    }
+    
+    .fun-fact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
+        margin-right: 20rem;
+        height: max-content;
+    }
+       
+    .boks-2 {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .boks-2 > section {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+}

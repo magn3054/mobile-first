@@ -216,4 +216,22 @@ header h1{
         background-color: var(--darkblue); 
         color: var(--lightblue);
     }
+    
+    .home-bg {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        width: 4rem;
+        height: 100%;
+        background-color: var(--darkblue); 
+        padding: 0 5rem 0 0;
+    }
+
+    .home {
+        filter: hue-rotate(353deg) saturate(0.7) brightness(5);
+        filter: hue-rotate(353deg) saturate(1) brightness(10);
+        margin: 0;
+        width: 100%;
+    }
+
 }

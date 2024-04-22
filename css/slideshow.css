@@ -77,7 +77,7 @@
 }
 
 
-@media only screen and (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
     .prev {
         left: -4.3rem;
         transform: scaleX(-1);

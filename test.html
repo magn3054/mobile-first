@@ -3,30 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aarhus Havnerundfart</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Om os - Aarhus Havnerundfart</title>
     <link rel="icon" href="img/aarhus-havnerundfart-logo_bg.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/om-os.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/header.css"> -->
-    <link rel="stylesheet" href="css/forside-test.css">
-    <link rel="stylesheet" href="css/forside.css">
-    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/test.css">
+
 </head>
 <body>
     <header>
-        <img class="logo" src="img/aarhus-havnerundfart-logo.webp" alt="Hjemmesidens logo" ></img>
-        <!-- <div class="headerlinks">
-            <ul>
-                <li><a href="#">Sejlplan</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Booking</a></li>
-                <li><a href="#">Aarhus til søs</a></li>
-                <li><a href="#">Information</a></li>
-                <li><a href="#">Om os</a></li>
-            </ul>
-        </div> -->
+        <img class="logo" src="img/aarhus-havnerundfart-logo.webp" alt="Hjemmesidens logo" onclick="Home()">
         <div id="wordmark">
             <h1>Aarhus Havnerundfart</h1>
-            <img class="wave" src="img/squiggly-line.svg" alt="">
+            <img class="wave" src="img/squiggly-line.svg" alt="Bøljet linje">
+            
+            <div class="subnav">
+                <a class="navbar subnavbtn" href="https://havnerundfart.mdamsgaard.dk/"><h3>Sejlplan</h3></a>
+            </div>
+            
+            <div class="subnav">
+                <a class="navbar subnavbtn" href="https://havnerundfart.mdamsgaard.dk/events.html"><h3>Events</h3></a>
+                <div class="subnav-content">
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#havnerundfart-i-aarhus">Havnerundfart i Aarhus</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#gintonic">Gin og Tonic til søs</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#minikoncerter-til-sos">Minikoncerter til søs</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#strik-til-sos">Strikketur til søs</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#kaptajn-for-en-dag">Kaptajn for en dag</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#under-overfladen">Under overfladen</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#bolger-og-brosten">Bølger og brosten</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#vinsmagning">Vinsmagning til søs</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#sankt-hans">Sankt Hans</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#eksplosion">Eksplosion på havnen</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#pub-quiz">Pubquiz til søs</a>
+                </div>
+            </div>
+            
+            <div class="subnav">
+                <a class="navbar subnavbtn" href="https://havnerundfart.mdamsgaard.dk/"><h3>Booking</h3></a>
+            </div>
+            
+            <div class="subnav">
+                <a class="navbar subnavbtn" href="https://havnerundfart.mdamsgaard.dk/"><h3>Aarhus fra søs</h3></a>
+                <div class="subnav-content">
+                    <a href="#">Rute</a>
+                    <a href="#">Mød skibene</a>
+                </div>
+            </div>            
+            
+            <div class="subnav">
+                <a class="navbar subnavbtn" href="https://havnerundfart.mdamsgaard.dk/menu-kort.html"><h3>Information</h3></a>
+                <div class="subnav-content">
+                    <a href="https://havnerundfart.mdamsgaard.dk/menu-kort.html">Menu kort</a>
+                    <a href="#">Gavekort</a>
+                    <a href="#">Aflysning</a>
+                    <a href="#">Kontakt</a>
+                </div>
+            </div>
+
+            <div class="subnav">
+                <a class="navbar subnavbtn on-site" href="https://havnerundfart.mdamsgaard.dk/om-os.html"><h3>Om os</h3></a>
+                <div class="subnav-content">
+                    <a href="#">Udforsk vores verden</a>
+                    <a href="#">Fun fact</a>
+                    <a href="#">Personale</a>
+                </div>
+            </div>
+        
         </div>
         <div class="burger">
             <img onclick="openNav()" src="icons/burger-icon.svg" alt="Tre streger over hinanden, åbner sidemenuen">
@@ -34,119 +80,131 @@
     </header>
 
     <div id="Nav" class="overlay">
-        <img class="closebtn" onclick="closeNav()" src="icons/cross-icon.svg" alt="Kryds" ></img>
-        <img class="logo" src="img/aarhus-havnerundfart-logo.webp" alt="Hjemmesidens logo" ></img>
+        <img class="closebtn" onclick="closeNav()" src="icons/cross-icon.svg" alt="Kryds" >
+        <img class="logo" src="img/aarhus-havnerundfart-logo.webp" alt="Hjemmesidens logo" >
         <div class="overlay-content">
-            <a href="#">Sejlplan</a>
-            <img class="headersquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
+            <div class="sub-plus"><a href="#">Sejlplan</a></div>
+            <img class="overlaysquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
             
-            <a href="#" class="dropdown">Events</a>
+            <div class="sub-plus"><a href="#">Events</a><img class="plusicon dropdown" src="icons/plus-icon.svg" alt="Plus ikon"></div>
                 <div class="dropdown-container">
-                    <a href="#">Gin og tonic</a>
-                    <a href="#">Kaptajn</a>
-                    <a href="#">Det sidste</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#havnerundfart-i-aarhus">Havnerundfart i Aarhus</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#gintonic">Gin og Tonic til søs</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#minikoncerter-til-sos">Minikoncerter til søs</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#strik-til-sos">Strikketur til søs</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#kaptajn-for-en-dag">Kaptajn for en dag</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#under-overfladen">Under overfladen</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#bolger-og-brosten">Bølger og brosten</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#vinsmagning">Vinsmagning til søs</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#sankt-hans">Sankt Hans</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#eksplosion">Eksplosion på havnen</a>
+                    <a href="https://havnerundfart.mdamsgaard.dk/events.html#pub-quiz">Pubquiz til søs</a>
                 </div>
-            <img class="headersquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
+            <img class="overlaysquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
             
-            <a href="#">Booking</a>
-            <img class="headersquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
+            <div class="sub-plus"><a href="#">Booking</a></div>
+            <img class="overlaysquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
             
-            <a href="#">Aarhus til søs</a>
-            <img class="headersquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
+            <div class="sub-plus"><a href="#">Aarhus fra søs</a><img class="plusicon dropdown" src="icons/plus-icon.svg" alt="Plus ikon"></div>
+                <div class="dropdown-container">
+                    <a href="#">Rute</a>
+                    <a href="#">Mød skibene</a>
+                </div>
+            <img class="overlaysquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
             
-            <a href="#">Information</a>
-            <img class="headersquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
+            <div class="sub-plus"><a href="#">Information</a><img class="plusicon dropdown" src="icons/plus-icon.svg" alt="Plus ikon"></div>
+                <div class="dropdown-container">
+                    <a href="http://havnerundfart.mdamsgaard.dk/menu-kort.html">Menu kort</a>
+                    <a href="#">Gavekort</a>
+                    <a href="#">Aflysning</a>
+                    <a href="#">Kontakt</a>
+                </div>
+            <img class="overlaysquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
             
-            <a href="#">Om os</a>
-            <img class="headersquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
+            <div class="sub-plus"><a href="http://havnerundfart.mdamsgaard.dk/om-os.html">Om os</a><img class="plusicon dropdown" src="icons/plus-icon.svg" alt="Plus ikon"></div>
+                <div class="dropdown-container">
+                    <a href="#">Udforsk vores verden</a>
+                    <a href="#">Fun fact</a>
+                    <a href="#">Personale</a>
+                </div>
+            <img class="overlaysquiggly" src="img/squiggly-line.svg" alt="Bøljet linje til de forskellige underkategorier">
         </div>
     </div>
 
-
     <main>
-        <div class="page">
-            <div class="slideshow">
-                <div class="slides fade">
-                  <div class="numbertext">1 / 3</div>
-                  <img src="https://aarhushavnerundfart.dk/wp-content/uploads/1440-%C3%97-719px.png">
-                  <div class="text">Caption Text</div>
-                </div>
-                
-                <div class="slides fade">
-                  <div class="numbertext">2 / 3</div>
-                  <img src="https://aarhushavnerundfart.dk/wp-content/uploads/Design-uden-navn-77.png">
-                  <div class="text">Caption Two</div>
-                </div>
-                
-                <div class="slides fade">
-                  <div class="numbertext">3 / 3</div>
-                  <img src="https://aarhushavnerundfart.dk/wp-content/uploads/Design-uden-navn-16-1440x811.png">
-                  <div class="text">Caption Three</div>
-                </div>
-                
-                <img class="prev" onclick="plusSlides(-1)" src="icons/arrow-icon.svg" alt="Venstre pil">
-                <img class="next" onclick="plusSlides(1)" src="icons/arrow-icon.svg" alt="Højre pil">
-            </div>
-                
-            <div class="indicators">
-                <img src="icons/boat-icon.svg" alt="Båd ikon" class="indicator" onclick="currentSlide(1)">
-                <img src="icons/boat-icon.svg" alt="Båd ikon" class="indicator" onclick="currentSlide(2)">
-                <img src="icons/boat-icon.svg" alt="Båd ikon" class="indicator" onclick="currentSlide(3)">
-            </div>
+        <div class="tekst">
+            <section class="boks-1">
+                <h4>Udfork vores verden</h4>
+                <p>Aarhushavnerundfart er en del af <a href="https://www.fjordtours.dk/" target="_blank">Fjordtours.dk</a> og er en familiejet virksomhed, der har til formål at gøre oplevelser på vandet tilgængeligt for så mange som muligt.</p>
+                <h4>Rejsen begyndte her i Aarhus</h4>
+                <p>Aarhus Havnerundfart havde sine første sejladser i Aarhus tilbage i 2019 med Svanen – bedre kendt som Juleskibet “Hjuldamperen”.</p>
+                <p>Som Danmarks 2. ældste by, er der et naturligt fokus på byens grundlæggelse i vikingetiden og havet betydning for byens placering og udvikling.</p>
+                <p>I 2023 udvidede Aarhus Havnerundfart med Havternen, der sejler faste guidede havnerundfarter, og særlige events, fra DOKK1 i perioden april til december.</p>
+                <h4>Aarhus fra søs</h4>
+                <p>Under sejlturen vil du få mulighed for at se nogle af Aarhus’ mest ikoniske attraktioner, herunder DOKK1, Toldboden og Lystbådehavnen. Du kan også opleve det moderne byområde Aarhus Ø, hvor der er blevet opført en imponerende arkitektur på havnefronten</p>
+            </section>
 
-            <article>
-                <section>
-                    <h4>Overskrift</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor consequatur sequi veniam aut quisquam dicta sunt, rerum explicabo obcaecati cupiditate reprehenderit nihil impedit? Mollitia consectetur eos, quidem beatae magnam accusantium ipsa.</p>
-                </section>
-                <section>
-                    <h4>Overskrift</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor consequatur sequi veniam aut quisquam dicta sunt, rerum explicabo obcaecati cupiditate reprehenderit nihil impedit? Mollitia consectetur eos, quidem beatae magnam accusantium ipsa.</p>
-                </section>
-                <section>
-                    <h4>Overskrift</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor consequatur sequi veniam aut quisquam dicta sunt, rerum explicabo obcaecati cupiditate reprehenderit nihil impedit? Mollitia consectetur eos, quidem beatae magnam accusantium ipsa.</p>
-                </section>
-                <section>
-                    <h4>Overskrift</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor consequatur sequi veniam aut quisquam dicta sunt, rerum explicabo obcaecati cupiditate reprehenderit nihil impedit? Mollitia consectetur eos, quidem beatae magnam accusantium ipsa.</p>
-                </section>
-                <section>
-                    <h4>Overskrift</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor consequatur sequi veniam aut quisquam dicta sunt, rerum explicabo obcaecati cupiditate reprehenderit nihil impedit? Mollitia consectetur eos, quidem beatae magnam accusantium ipsa.</p>
-                </section>
-                <section>
-                    <h4>Overskrift</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor consequatur sequi veniam aut quisquam dicta sunt, rerum explicabo obcaecati cupiditate reprehenderit nihil impedit? Mollitia consectetur eos, quidem beatae magnam accusantium ipsa.</p>
-                </section>
-            </article>
+            <section class="fun-fact">
+                <h3>Fun fact</h3>
+                <h4>Det gamle Aarhus</h4>
+                <p>Aarhus er kendt for sin rige kultur og gamle historie, og derfor sejler Havternen forbi "Det Gamle Aarhus". Guiden vil have særligt fokus på historien om tidligere bygninger og industri, samt erhvervslivet.</p>
+                <h4>Det nye Aarhus</h4>
+                <p>Det Nye Aarhus byder velkommen til moderne arkitektur, samt en rig kulturarv. De erfarne guider ombord vil fortælle spændende historier om byens udvikling, med fokus på de smukke bygninger langs havnefronten.</p>
+            </section>
         </div>
+       <section class="boks-2">
+            <section>
+                <div>
+                    <img src="img/profil-billede.webp" alt="Profil billede ikke tilgængeligt" class="profil-billede">
+                    <p>Magnus Høgh</p>
+                    <p>Driftansvarlig</p>
+                </div>
+
+                <div>
+                    <img src="img/profil-billede.webp" alt="Profil billede ikke tilgængeligt" class="profil-billede">
+                    <p>Peter</p>
+                    <p>C/O</p>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <img src="img/profil-billede.webp" alt="Profil billede ikke tilgængeligt" class="profil-billede">
+                    <p>Mariam Mikha</p>
+                    <p>Marketingansvarlig</p>
+                </div>
+
+                <div>
+                    <img src="img/profil-billede.webp" alt="Profil billede ikke tilgængeligt" class="profil-billede">
+                    <p>Minna Trøllund</p>
+                    <p>Eventkoordinator</p>
+                </div>
+            </section>
+        </section>
+
         <footer>
-            <!-- <section class="top">
-                <div class="venstre">
+            <section class="topfooter">
+                <div class="venstrefooter">
                     <p>Booking og kontakt</p>
                     <p>Tlf: <a href="+4535113539"></a>+45 35 11 35 39</p>
                     <p>Mail: <a href="info@fjordtours.dk"></a>info@fjordtours.dk</p>
                 </div>
-                <div class="hojre">
+                <div class="hojrefooter">
                     <p>Info</p>
-                    <p>Handelsbetingelser</p>
-                    <p>Privatlivspolitik</p>
-                    <p>Ledige stillinger</p>
+                    <a href="#"><p>Handelsbetingelser</p></a>
+                    <a href="#"><p>Privatlivspolitik</p></a>
+                    <a href="#"><p>Ledige stillinger</p></a>
                 </div>
-            </div>
-            <section class="bot">
-                <i class="fa-brands fa-linkedin">Facebook</i>
-                <i class="fa-brands fa-linkedin">Instgram</i>
-                <i class="fa-brands fa-linkedin">Linkedin</i>
-                <i class="fa-brands fa-linkedin">Google My Business</i>
-            </section> -->
-
+            </section>
+            <section class="botfooter">
+                <a href="https://www.facebook.com/Aarhushavnerundfart" class="socials"><img src="icons/facebook-icon.svg" alt="Facebook">Facebook</a>
+                <a href="https://www.instagram.com/aarhushavnerundfart/" class="socials"><img src="icons/instagram-icon.svg" alt="Instagram">Instgram</a>
+                <a href="https://www.linkedin.com/company/aarhushavnerundfart/" class="socials"><img src="icons/linkedin-icon.svg" alt="Linkedin">Linkedin</a>
+            </section>
         </footer>
     </main>
 
 
 <script src="js/sidemenu.js"></script>
-<script src="js/slideshow.js"></script>
 </body>
 </html>
