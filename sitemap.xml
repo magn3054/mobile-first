@@ -7,6 +7,27 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
+<url>
+  <loc>http://havnerundfart.mdamsgaard.dk/index.html</loc>
+  <lastmod>2024-04-22T20:44:29+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://havnerundfart.mdamsgaard.dk/events.html</loc>
+  <lastmod>2024-04-22T20:44:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://havnerundfart.mdamsgaard.dk/menu-kort.html</loc>
+  <lastmod>2024-04-22T20:44:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://havnerundfart.mdamsgaard.dk/om-os.html</loc>
+  <lastmod>2024-04-22T20:44:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
 
 
 </urlset>
