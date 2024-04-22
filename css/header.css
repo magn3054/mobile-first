@@ -229,7 +229,7 @@ header h1{
 
     .home {
         filter: hue-rotate(353deg) saturate(0.7) brightness(5);
-        filter: hue-rotate(353deg) saturate(1) brightness(10);
+        /* filter: hue-rotate(353deg) saturate(1) brightness(10); */
         margin: 0;
         width: 100%;
     }
