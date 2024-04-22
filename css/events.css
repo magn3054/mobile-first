@@ -32,6 +32,21 @@ h2{
     margin: 0.5rem 0;
 }
 
+.sejlplan {
+    text-decoration: underline;
+    text-align: center;
+    color: #fff;
+    padding: 0.6rem 3rem;
+    margin: 0 3rem;
+    font-size: 0.75rem;
+    font-size: auto;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    background-color: #19355c;
+    border-radius: 2.8rem;
+}
+
 .kalender section{
     display: flex;
     align-items: center;
@@ -49,25 +64,6 @@ h2{
 .squiggly-line{
    margin: 1rem 3rem 0 3rem;
 }
-
-a {
-    text-decoration: none;
-    text-decoration: underline;
-    color: #ffffff;
-}
-
-button {
-    padding: 0.6rem 0.5rem;
-    margin: 0 3rem;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.15rem;
-    font-weight: 500;
-    background-color: #19355c;
-    border: none;
-    border-radius: 2.8rem;
-    transition: all 0.3s ease 0s;
-  }
 
 .pris{
     display: flex;
@@ -165,19 +161,6 @@ button {
        margin: 3rem 8% 1.5rem 8%;
        
     }
-    
-    a {
-        text-decoration: none;
-        text-decoration: underline;
-        color: #ffffff;
-    }
-
-    .btn{
-        display: flex;
-        justify-content: center;
-        margin-top: 4.8rem;
-    }
-
 
     .pris{
         display: flex;

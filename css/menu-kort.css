@@ -28,6 +28,7 @@ li {
  /* Justerer teksten til venstre */
 .drink {
     justify-self: start; 
+    text-align: center;
 }
 
 .price {
