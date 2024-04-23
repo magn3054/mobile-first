@@ -28,6 +28,7 @@ li {
  /* Justerer teksten til venstre */
 .drink {
     justify-self: start; 
+    text-align: center;
 }
 
 .price {
@@ -49,7 +50,7 @@ img {
         /* border: red solid 2px; */
     }
 
-    .overtest {
+    .overkategori {
         display: flex;
         flex-direction: row;
         /* border: blue solid 2px; */
@@ -57,7 +58,7 @@ img {
         margin-top: 2rem;
     }
 
-    .test {
+    .kategori {
         display: flex;
         flex-flow: column wrap;
         width: 50%;

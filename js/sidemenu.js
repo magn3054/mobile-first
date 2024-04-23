@@ -1,7 +1,3 @@
-function Home() {
-  window.location.href = "https://havnerundfart.mdamsgaard.dk";  
-}
-
 function openNav() {
     document.getElementById("Nav").style.width = "100%";
 }
