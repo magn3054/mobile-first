@@ -159,4 +159,17 @@ h2{
         display: flex;
         justify-content: space-between;
     }
+
+    .sejlplanknap {
+        text-decoration: underline;
+        text-align: center;
+        color: #fff;
+        padding: 0.6rem 3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-weight: 500;
+        background-color: #19355c;
+        border-radius: 2.8rem;
+        justify-self: flex-end;
+    }
 }
