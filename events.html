@@ -132,6 +132,16 @@
 
     <div class="havnerundfart">
         <h2 id="havnerundfart-i-aarhus">Havnerundfart i Aarhus</h2>
+        <picture>
+            <!-- Source 1: Default image -->
+            <source srcset="img/squiggly-line.svg" media="(max-width: 999px)" type="image/svg+xml">
+        
+            <!-- Source 2: Image for screens up to 1000px width -->
+            <source srcset="img/squiggly-line-thin.svg" media="(min-width: 1000px)" type="image/svg+xml">
+        
+            <!-- Fallback image -->
+            <img src="img/squiggly-line.svg" alt="Bøljet linje" class="squiggly-line">
+        </picture>
         <div class="tusind">
             <div class="tekst">
                 <p>Oplev Aarhus fra vandsiden med en guidet havnerundfart. Nyd den maritime stemning og lyt til spændende historier om det gamle- og nye Aarhus, samt det moderne byområde Aarhus Ø med helt nyopført skandinavisk arkitektur i verdensklasse.</p>
