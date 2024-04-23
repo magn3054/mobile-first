@@ -1,7 +1,7 @@
 #om-os {
     font-size: 2.3rem;
 }
-
+/* Her er biks-1 stylet, så teksten står pænt */
 .boks-1 {
     margin: 30px;
     display: flex;
@@ -20,7 +20,7 @@
 .boks-1 p {
     margin: 0 0 10px 0;
 }
-
+/* Her er fun fact stylet med baggrundsfarve og kant rundt */
 .fun-fact {
     margin: 30px;
     display: flex;
@@ -66,7 +66,7 @@
     justify-content: center;
     align-items: center;
 }
-
+/* Profilbillederne er sat på række to og to med tekst under */
 .profil-billede {
     border-radius: 50%;
     width: 90%;
@@ -81,7 +81,7 @@
 }
 
 
-
+/* Her er der lavet media screen til computer, som gør teksten passer bedre og er centreret bedre*/
 @media screen and (min-width: 800px) {
     
     .boks-1 {
@@ -89,12 +89,13 @@
         margin: 40px 120px 40px 120px;
 
     }
-
+ /* Boksen fun fact er sat ind så den er på linje med teksten ovenover */
     .fun-fact {
         margin: 40px 120px 40px 120px;
         padding: 20px;
     }
 
+/* Her er profilbillederne sat ved siden af hinanden */
     .boks-2 {
         display: flex;
         flex-direction: row;
