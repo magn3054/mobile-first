@@ -35,12 +35,11 @@ h2{
     margin: 0.5rem 0;
 }
 
-.sejlplan {
+.sejlplanknap {
     text-decoration: underline;
     text-align: center;
     color: #fff;
     padding: 0.6rem 3rem;
-    margin: 0 3rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-weight: 500;
@@ -86,11 +85,7 @@ h2{
     justify-content: space-between;
 }
 
-
 @media (min-width: 1000px) {
-
-
-    
     h2{
         margin: 1rem 0 0.5rem 0;
         display: flex;
@@ -107,8 +102,6 @@ h2{
         width: 100%;
         padding: 0 8%;
     }
-
-      
     
     .tusind{
         display: flex;
@@ -126,9 +119,7 @@ h2{
         padding: 0;
         margin-top: 0;
         width: 48%;
-        
     }
-    
     
     .tekst p{
         font-size: 1.2rem;
@@ -136,11 +127,9 @@ h2{
     }
 
     .kalender{
-
         width: 48%;
         padding: 0;
         margin: 0 0 2rem 0;
-
     }
     
     .kalender section{
@@ -159,17 +148,28 @@ h2{
     
     .squiggly-line{
        margin: 3rem 8% 1.5rem 8%;
-       
     }
 
     .pris{
         display: flex;
         justify-content: center;
-        
     }
 
     #kaptajn-pris{
         display: flex;
         justify-content: space-between;
+    }
+
+    .sejlplanknap {
+        text-decoration: underline;
+        text-align: center;
+        color: #fff;
+        padding: 0.6rem 3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-weight: 500;
+        background-color: #19355c;
+        border-radius: 2.8rem;
+        justify-self: flex-end;
     }
 }
